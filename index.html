@@ -4,64 +4,110 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <title>portafolio/gearface</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <header>
-        <nav class="header">
-            <a href="#" class="headerText">home</a>
-            <a href="#" class="headerText">Acerca de mí</a>
-            <a href="#" class="headerText">Mis habilidades</a>
-            <a href="#" class="headerText">Experiencia</a>
-            <a href="#" class="headerText">Portafolio</a>
-            <a href="#" class="headerText">Contacto</a>
+    <header class="header">
+        <nav class="header--nav">
+            <!--* MENU -->
+            <img src="/assets/menu 1.svg" class="nav--Menu-img" alt="menu" id="menu--img-open">
+            <div class="nav--div-menu menu--close" id="menu-principal">
+                <img src="/assets/close.svg" class="nav--menu-img-close" id="menu--img-close" alt="close">
+                <ul class="nav--div-list">
+                    <li><a href="#pagPrincipal" class="ul--item">home</a></li>
+                    <li><a href="#pagAbout" class="ul--item">Acerca de mí</a></li>
+                    <li><a href="#mySkills" class="ul--item">Mis habilidades</a></li>
+                    <li><a href="#myExperience" class="ul--item">Experiencia</a></li>
+                    <li><a href="#myExperience" class="ul--item">Portafolio</a></li>
+                    <li><a href="#myContact" class="ul--item">Contacto</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <img src="/assets/background/Group 99.svg" class="background" id="backg1" alt="background">
-    <img src="/assets/Rectangle 45perfil.png" class="perfil" alt="foto de perfil">
-    <h1 class="text title">Hola, soy Emmanuel <br> <span class=" textImportant">Diseñador y <br> desarrollador Web</span></h1>
-    <div class="redes">
-        <img src="/assets/redes/cib_linkedin-in.svg" alt="linkedin">
-        <img src="/assets/redes/ant-design_instagram-filled.svg" alt="instagram">
-        <img src="/assets/redes/ant-design_twitter-outlined.svg" alt="twitter">
-    </div>
-    <div class="background">
-        <img src="/assets/background/Group 98.svg" id="backg2" alt="">
-    </div>
-    <article>
-        <section>
-            <h2 class="title2">Acerca de mí</h2>
-            <p class="text centrado">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel temporibus molestiae illo est esse eligendi architecto, reprehenderit consequuntur, repellendus aliquid autem hic voluptate suscipit voluptatibus harum eaque nisi incidunt quisquam quasi illum non! Accusantium, quam autem! Perferendis vel ipsa sunt incidunt, nam neque. Laborum eligendi quo saepe beatae natus repellat!</p>
-        </section>
-        <section>
-            <h2 class="title2 noCenter">mis habilidades</h2>
-            <div class="line1">
-                <img src="/assets/icons/ant-design_mobile-filled.svg" class="iconSkills" alt="mobile">
-                <p class="iconTitle">Mobile app design</p>
-                <img src="/assets/icons/mdi_motion.svg" class="iconSkills" alt="Motion-desing">
-                <p class="iconTitle">Motion desing</p>
-            </div>
-            <div class="line2">
-                <img src="/assets/icons/mdi_material-design.svg" class="iconSkills" alt="Creation-Design-Sistem">
-                <p class="iconTitle">Creación de sistemas de diseño</p>
-                <img src="/assets/icons/ic_outline-web-asset.svg" class="iconSkills" alt="web-Design">
-                <p class="iconTitle">Desarrollo Web</p>
-            </div>
-        </section>
-        <section>
-            <h2 class="title2">Experiencia</h2>
-            <p class="text wExp">2016-2018</p>
-            <p class="Experiencia wExp">Visual designer <br><span class="text">Wizeline</span></p>
-            <p class="text wExp">2016-2018</p>
-            <p class="Experiencia wExp">Product designer <br><span class="text">Microsoft</span></p>
-            <p class="text wExp">2016-2018</p>
-            <p class="Experiencia wExp">UI Engineer <br><span class="text">Google</span></p>
 
+    <section class="principal--content" id="pagPrincipal">
+        <img src="/assets/perfil-principal.jpg" class="principal--face-perfil" alt="foto de perfil">
+        <h1 class="principal--title">Hola, soy Emmanuel <br> <span class="principal--title__important">Diseñador y <br> desarrollador Web</span></h1>
+        <div class="principal--div-redes">
+            <img src="/assets/redes/cib_linkedin-in.svg" alt="linkedin">
+            <img src="/assets/redes/ant-design_instagram-filled.svg" alt="instagram">
+            <img src="/assets/redes/ant-design_twitter-outlined.svg" alt="twitter">
+        </div> 
+    </section>
+    <div class="background-two"></div>
+    <article class="mb-section">
+        <section id="pagAbout">
+            <h2 class="title-h2">Acerca de mí</h2>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel temporibus molestiae illo est esse eligendi architecto, reprehenderit consequuntur, repellendus aliquid autem hic voluptate suscipit voluptatibus harum eaque nisi incidunt quisquam quasi illum non! Accusantium, quam autem! Perferendis vel ipsa sunt incidunt, nam neque. Laborum eligendi quo saepe beatae natus repellat!</p>
+        </section>
+        <section id="mySkills" class="background-relative">
+            <img src="/assets/background/Group 97.svg" alt="background" class="background-circle-one">
+            <h2 class="title-h2">mis habilidades</h2>
+            <div class="grid text-center">
+                <div class="flex-skills">
+                    <img src="/assets/icons/ant-design_mobile-filled.svg" class="iconSkills" alt="mobile">
+                    <p class="iconTitle">Mobile app design</p>
+                </div>
+                <div class="flex-skills">
+                    <img src="/assets/icons/mdi_motion.svg" class="iconSkills" alt="Motion-desing">
+                    <p class="iconTitle">Motion desing</p>
+                </div>
+                <div class="flex-skills">
+                    <img src="/assets/icons/mdi_material-design.svg" class="iconSkills" alt="Creation-Design-Sistem">
+                    <p class="iconTitle">Creación de sistemas de diseño</p>
+                </div>
+                <div class="flex-skills">
+                    <img src="/assets/icons/ic_outline-web-asset.svg" class="iconSkills" alt="web-Design">
+                    <p class="iconTitle">Desarrollo Web</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="myExperience">
+            <h2 class="title-h2">Experiencia</h2>
+            <div class="flex-xperience">
+                <p>2016-2018</p>
+                <p><span class="resalt">Visual designer</span><br> Wizeline</p>
+            </div>
+            <hr>
+            <div class="flex-xperience">
+                <p>2016-2018</p>
+                <p><span class="resalt">Product designer</span><br>Microsoft</p>
+            </div>
+            <hr>
+            <div class="flex-xperience">
+                <p>2016-2018</p>
+                <p><span class="resalt">UI Engineer</span><br> Google</p>
+            </div>
+        </section>
+        <section id="myportfolio" class="background-relative">
+            <img src="/assets/background/Group 97.svg" alt="background" class="background-circle-two">
+            <h2 class="title-h2">portafolio</h2>
+            <img src="/assets/references/" alt="">
         </section>
     </article>
+    <footer id="myContact" class="mb-section footer">
+        <h2 class="title-h2">Contacto</h2>
+        <div class="grid">
+            <div class="contact">
+                <div class="contact--img">
+                    <img src="/assets/icons/phone 3.svg" class="" alt="">
+                </div>
+                <span>Número Celular</span>
+                <span>+591 72578949</span>
+            </div>
+            <div class="contact">
+                <div class="contact--img">
+                    <img src="/assets/icons/mail 3.svg" class="" alt="">
+                </div>
+                <span>Email</span>
+                <small>misterium273@gmail.com</small>
+            </div>
+        </div>
+        <hr>
+        <small>MDK all rights reserved</smalls>
+    </footer>
+    <script src="/js/main.js" type="module"></script>
 </body>
 </html>

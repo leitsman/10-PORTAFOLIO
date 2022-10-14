@@ -1,0 +1,30 @@
+home
+Acerca de mí
+Mis habilidades
+Experiencia
+Portafolio
+Contacto
+
+Hola, soy Emmanuel
+Diseñador y 
+ desarrollador Web
+ 
+Acerca de mí
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel temporibus molestiae illo est esse eligendi architecto, reprehenderit consequuntur, repellendus aliquid autem hic voluptate suscipit voluptatibus harum eaque nisi incidunt quisquam quasi illum non! Accusantium, quam autem! Perferendis vel ipsa sunt incidunt, nam neque. Laborum eligendi quo saepe beatae natus repellat!
+
+mis habilidades
+Mobile app design
+Motion desing
+Creación de sistemas de diseño
+Desarrollo Web
+
+Experiencia
+2016-2018
+Visual designer
+Wizeline
+2016-2018
+Product designer
+Microsoft
+2016-2018
+UI Engineer
+Google
