@@ -28,15 +28,22 @@ img{
     max-width: 100%;
 }
 
+article{    
+    padding: 15px;    
+}
+
+
 /*! ================== SELECTOR UNIVERSAL ============= */
 .background-relative{
     position: relative;
 }
 .mb-section{
+   
     margin-left: var(--mg-ten);
     margin-right: var(--mg-ten);
 }
 .title-h2{
+    margin-top: 130px;
     font-size: 1.8rem;
     color: var(--color-white);
 }
