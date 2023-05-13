@@ -1,32 +1,50 @@
 import { menuOpenClose } from "./components/menu.js"
 
-window.addEventListener('DOMContentLoaded', e=>{
+window.addEventListener('DOMContentLoaded', e => {
     menuOpenClose()
+    // const redesIcon = document.querySelectorAll('.redes__icon')
+    // // console.log(redesIcon);
+    // if (screen.width >= 1024) {
+    //     // redesIcon.classList.add('fa-4x');
+    //     console.log(redesIcon);
+    // } else {
+    //     redesIcon.classList.remove('fa-4x')
+    // }
 })
 //! ================ HEADER-fixed ===============
 const headerFix = document.querySelector('.header')
-window.addEventListener('scroll', event=>{
-    if (window.scrollY >= 50) {
-        headerFix.classList.add('header--fixed')
-    }else{
-        headerFix.classList.remove('header--fixed')
+const headerContainer = document.querySelector('.header__container')
+const arrowUp = document.querySelector('.container__arrow-up')
+// console.log(arrowUp);
+window.addEventListener('scroll', e => {
+    if (window.scrollY >= 90) {
+        headerFix.classList.add('header__fixed')
+        headerContainer.classList.add('header__container--shadow')
+    } else {
+        headerFix.classList.remove('header__fixed')
+        headerContainer.classList.remove('header__container--shadow')
     }
-})
-
-
-('.navbar-nav div ul li a').click(function(e){
-    // Evitamos que se haga el scroll
-    e.preventDefault();
-
-    // Capturamos el ancla
-    let ancla = $(this).attr('href');
-
-    // Le quitamos el numeral # para solo quedarnos con el nombre de la sección
-    ancla = ancla.substring(1);
-
-    // Obtenemos la posición de la sección
-    let position = $('#'+ ancla).position();
-
-    // Hacemos el efecto scroll y le restamos algunos pixeles, en este caso 180
-    $('html, body').animate({scrollTop: (position.top - 600)}, 0);
-})
+    if (window.scrollY >= 380) {
+        arrowUp.classList.add('container__arrow-up--active');
+    } else {
+        arrowUp.classList.remove('container__arrow-up--active')
+    }
+});
+//! ============== INCREMENT ICON ==============
+const redesIcon = document.querySelectorAll('.redes__icon')
+// console.log(redesIcon);
+window.addEventListener('resize', e => {
+    const windowWidth = window.innerWidth
+    if (windowWidth > 1024) {
+        redesIcon.forEach(e => {
+            e.classList.add('fa-4x');
+            e.classList.remove('fa-3x');
+            console.log(e.classList);
+        });
+    } else {
+        redesIcon.forEach(e => {
+            // e.classList.remove('fa-4x');
+            console.log(e.classList);
+        })
+    }
+});
