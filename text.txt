@@ -28,3 +28,5 @@ Microsoft
 2016-2018
 UI Engineer
 Google
+
+que tal! como ya vieron en el titulo, me especializo en el Desarrollo web mas que todo en el apartado del front end y en proximas entregas en back end. <br> las actitudes que destaco son desde mi energia por aprender y seguir programando asi tambien querer mostrar y presentar lo mejor de cada proyecto que se presente en la ocacion

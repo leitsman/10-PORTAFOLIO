@@ -1,113 +1,160 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portafolio/gearface</title>
+    <!-- ============== ICONS =========== -->
+    <script src="https://kit.fontawesome.com/76c16c9961.js" crossorigin="anonymous"></script>
+    <!-- ============== FAVICON ========== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+    <!-- ================ FONTS =================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>portafolio/E.C.</title>
+    <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
+
+<body id="pagPrincipal">
+    <a href="#pagPrincipal" class="container__arrow-up flex">
+        <i class="fa-solid fa-arrow-up fa-3x"></i>
+    </a>
     <header class="header">
-        <nav class="header--nav">
-            <!--* MENU -->
-            <img src="/assets/menu 1.svg" class="nav--Menu-img" alt="menu" id="menu--img-open">
-            <div class="nav--div-menu menu--close" id="menu-principal">
-                <img src="/assets/close.svg" class="nav--menu-img-close" id="menu--img-close" alt="close">
-                <ul class="nav--div-list">
-                    <li><a href="#pagPrincipal" class="ul--item">home</a></li>
-                    <li><a href="#pagAbout" class="ul--item">Acerca de mí</a></li>
-                    <li><a href="#mySkills" class="ul--item">Mis habilidades</a></li>
-                    <li><a href="#myExperience" class="ul--item">Experiencia</a></li>
-                    <li><a href="#myExperience" class="ul--item">Portafolio</a></li>
-                    <li><a href="#myContact" class="ul--item">Contacto</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+        <div class="header__container flex">
+            <div class="header__logo">E.C.</div>
+            <nav class="header__nav">
+                <!-- MENU -->
+                <img src="/public/assets/menu.svg" class="nav__Menu-img" alt="menu" id="menu__img-open">
 
-    <section class="principal--content" id="pagPrincipal">
-        <img src="/assets/perfil-principal.jpg" class="principal--face-perfil" alt="foto de perfil">
-        <h1 class="principal--title">Hola, soy Emmanuel <br> <span class="principal--title__important">Diseñador y <br> desarrollador Web</span></h1>
-        <div class="principal--div-redes">
-            <img src="/assets/redes/cib_linkedin-in.svg" alt="linkedin">
-            <img src="/assets/redes/ant-design_instagram-filled.svg" alt="instagram">
-            <img src="/assets/redes/ant-design_twitter-outlined.svg" alt="twitter">
-        </div> 
-    </section>
-    <div class="background-two"></div>
-    <article class="mb-section">
-        <section id="pagAbout">
-            <h2 class="title-h2">Acerca de mí</h2>
-            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel temporibus molestiae illo est esse eligendi architecto, reprehenderit consequuntur, repellendus aliquid autem hic voluptate suscipit voluptatibus harum eaque nisi incidunt quisquam quasi illum non! Accusantium, quam autem! Perferendis vel ipsa sunt incidunt, nam neque. Laborum eligendi quo saepe beatae natus repellat!</p>
-        </section>
-        <section id="mySkills" class="background-relative">
-            <img src="/assets/background/Group 97.svg" alt="background" class="background-circle-one">
-            <h2 class="title-h2">mis habilidades</h2>
-            <div class="grid text-center">
-                <div class="flex-skills">
-                    <img src="/assets/icons/ant-design_mobile-filled.svg" class="iconSkills" alt="mobile">
-                    <p class="iconTitle">Mobile app design</p>
+                <div class="nav__menu flex menu__close" id="menu-principal">
+                    <img src="public/assets/close.svg" class="nav__menu-img-close" id="menu__img-close" alt="close">
+                    <ul class="nav__div-list flex sub-title">
+                        <li><a href="#secAbout" class="ul__item">Acerca de mí</a></li>
+                        <li><a href="#secSkills" class="ul__item">Mis habilidades</a></li>
+                        <li><a href="#secExperience" class="ul__item">Experiencia</a></li>
+                        <li><a href="#secPortfolio" class="ul__item">Portafolio</a></li>
+                        <li><a href="#myContact" class="ul__item">Contacto</a></li>
+                    </ul>
                 </div>
-                <div class="flex-skills">
-                    <img src="/assets/icons/mdi_motion.svg" class="iconSkills" alt="Motion-desing">
-                    <p class="iconTitle">Motion desing</p>
-                </div>
-                <div class="flex-skills">
-                    <img src="/assets/icons/mdi_material-design.svg" class="iconSkills" alt="Creation-Design-Sistem">
-                    <p class="iconTitle">Creación de sistemas de diseño</p>
-                </div>
-                <div class="flex-skills">
-                    <img src="/assets/icons/ic_outline-web-asset.svg" class="iconSkills" alt="web-Design">
-                    <p class="iconTitle">Desarrollo Web</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="myExperience">
-            <h2 class="title-h2">Experiencia</h2>
-            <div class="flex-xperience">
-                <p>2016-2018</p>
-                <p><span class="resalt">Visual designer</span><br> Wizeline</p>
-            </div>
-            <hr>
-            <div class="flex-xperience">
-                <p>2016-2018</p>
-                <p><span class="resalt">Product designer</span><br>Microsoft</p>
-            </div>
-            <hr>
-            <div class="flex-xperience">
-                <p>2016-2018</p>
-                <p><span class="resalt">UI Engineer</span><br> Google</p>
-            </div>
-        </section>
-        <section id="myportfolio" class="background-relative">
-            <img src="/assets/background/Group 97.svg" alt="background" class="background-circle-two">
-            <h2 class="title-h2">portafolio</h2>
-            <img src="/assets/references/" alt="">
-        </section>
-    </article>
-    <footer id="myContact" class="mb-section footer">
-        <h2 class="title-h2">Contacto</h2>
-        <div class="grid">
-            <div class="contact">
-                <div class="contact--img">
-                    <img src="/assets/icons/phone 3.svg" class="" alt="">
-                </div>
-                <span>Número Celular</span>
-                <span>+591 72578949</span>
-            </div>
-            <div class="contact">
-                <div class="contact--img">
-                    <img src="/assets/icons/mail 3.svg" class="" alt="">
-                </div>
-                <span>Email</span>
-                <small>misterium273@gmail.com</small>
-            </div>
+            </nav>
         </div>
-        <hr>
-        <small>MDK all rights reserved</smalls>
+    </header>
+    <main class="main">
+        <section class="principal__content relative flex text-center">
+            <div class="principal__background">
+                <img src="/public/assets/background/lineal.svg" alt="background">
+            </div>
+            <img src="public/assets/fotoMain.jpg" class="principal__face-perfil" alt="foto de perfil">
+            <h2 class="sub-title">Hola, soy Emmanuel
+                <h1 class="title title__color">Diseñador y desarrollador Web</h1>
+            </h2>
+            <div class="flex principal__redes">
+                <a href="https://www.linkedin.com/in/emmanuel-c-bb923213a/" target="_blank">
+                    <i class="redes__icon fa-brands fa-linkedin-in fa-3x"></i>
+                </a>
+                <a href="/public/CV.pdf" target="_blank" download="cv-emmanuel-full-stack">
+                    <button class="principal__button-cv sub-section">descargar cv</button>
+                </a>
+                <a href="https://github.com/leitsman" target="_blank">
+                    <i class="redes__icon fa-brands fa-github fa-3x"></i>
+                </a>
+            </div>
+            <div class="principal__background-curve relative">
+                <img src="/public/assets/background/curveSmall.svg" alt="background-lineal">
+            </div>
+        </section>
+        <article class="m-12">
+            <section id="secAbout" class="scroll-link section__about mx-section margin-section">
+                <h2 class="sub-title pb-1 title__color title-center">Acerca de mí</h2>
+                <p>
+                    que tal! como ya vieron en el titulo, me especializo en el Desarrollo web mas que todo en el
+                    apartado
+                    del front end y en proximas entregas en back end. <br> las actitudes que destaco son desde mi
+                    energia
+                    por aprender y seguir programando asi tambien querer mostrar y presentar lo mejor de cada proyecto
+                    que
+                    se presente en la ocacion
+                </p>
+            </section>
+            <section id="secSkills" class="scroll-link section__skills mx-section margin-section relative">
+                <div class="bg__content-circle bg__content-circle--one">
+                    <img src="/public/assets/background/circle.svg" alt="background" class="bg-circle-one relative">
+                </div>
+                <h2 class="sub-title title__color pb-1 title-center">mis habilidades</h2>
+                <div class="grid text-center skills__container">
+                    <div class="skills__container-item flex">
+                        <i class="fa-brands fa-react fa-3x skills__icon flex"></i>
+                        <p class="sub-section title__color">React</p>
+                    </div>
+                    <div class="skills__container-item flex">
+                        <i class="fa-solid fa-file-code skills__icon flex fa-3x"></i>
+                        <p class="sub-section title__color">Html/Css</p>
+                    </div>
+                    <div class="skills__container-item flex">
+                        <i class="fa-brands fa-git-alt skills__icon flex fa-3x"></i>
+                        <p class="sub-section title__color">git</p>
+                    </div>
+                    <div class="skills__container-item flex">
+                        <i class="fa-brands fa-js skills__icon flex fa-3x"></i>
+                        <p class="sub-section title__color">JavasCript</p>
+                    </div>
+                </div>
+            </section>
+            <section id="secExperience" class="scroll-link section__experience mx-section margin-section relative">
+                <h2 class="sub-title title__color pb-1 title-center">Experiencia</h2>
+                <div class="flex experience--container-element--item">
+                    <span>Abr-2022</span>
+                    <span><strong class="title__color">resimex</strong><br>Coworking lab</span>
+                </div>
+                <div class="flex experience--container-element--item">
+                    <span>nov-2022</span>
+                    <span><strong class="title__color">Pokedex React</strong><br>Academlo</span>
+                </div>
+                <div class="flex experience--container-element--item">
+                    <span>Noviembre-2022</span>
+                    <span><strong class="title__color">Ecomerce React</strong><br> Academlo</span>
+                </div>
+                <div class="bg__content-circle bg__content-circle--two">
+                    <img src="/public/assets/background/circle.svg" alt="background" class="bg-circle-two relative">
+                </div>
+            </section>
+            <section id="secPortfolio" class="scroll-link section__portfolio mx-section margin-section">
+                <h2 class="sub-title title__color pb-1 title-center">portafolio</h2>
+                <div class="portfolio__container-imgs">
+                    <div class="page flex element-center"><img src="/public/assets/no-image.svg" alt="no-image"
+                            class="svg__no-image"></div>
+                    <div class="page flex element-center"><img src="/public/assets/no-image.svg" alt="no-image"
+                            class="svg__no-image"></div>
+                    <div class="page flex element-center"><img src="/public/assets/no-image.svg" alt="no-image"
+                            class="svg__no-image"></div>
+                    <div class="page flex element-center"><img src="/public/assets/no-image.svg" alt="no-image"
+                            class="svg__no-image"></div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer id="myContact" class="mx-section margin-section">
+        <h2 class="sub-title title__color pb-1 title-center">Contacto</h2>
+        <ul class="footer__container-contact flex">
+            <li><a href="https://bit.ly/3VV8cTH" target="_blank" class="contact__item flex">
+                    <i class="fa-solid fa-phone fa-2x contact__item--icon flex"></i>
+                    <span class="sub-section">Número Celular</span>
+                </a>
+            </li>
+            <li><a href="mailto:misterium273@gmail.com" class="contact__item flex">
+                    <i class="fa-solid fa-envelope fa-2x contact__item--icon flex"></i>
+                    <span class="sub-section">Email</span>
+                </a>
+            </li>
+        </ul>
+        <!-- <small>hecho con lenguaje vanilla</smalls> -->
     </footer>
     <script src="/js/main.js" type="module"></script>
 </body>
+
 </html>
