@@ -33,18 +33,32 @@
     <!-- ============== ICONS =========== -->
     <script src="https://kit.fontawesome.com/76c16c9961.js" crossorigin="anonymous"></script>
     <!-- ============== FAVICON ========== -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="public/assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="public/assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="public/assets/favicons/favicon-16x16.png">
     <!-- ================ FONTS =================== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body id="pagPrincipal">
+    <div class="area">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
     <a href="#pagPrincipal" class="container__arrow-up flex">
         <i class="fa-solid fa-arrow-up fa-3x"></i>
     </a>
@@ -75,7 +89,7 @@
             </div>
             <img src="public/assets/fotoMain.jpg" class="principal__face-perfil" alt="foto de perfil">
             <h2 class="sub-title">Hola, soy Emmanuel
-                <h1 class="title title__color">Diseñador y desarrollador Web</h1>
+                <h1 class="title title__color">Diseñador y desarrollador web</h1>
             </h2>
             <div class="flex principal__redes">
                 <a href="https://www.linkedin.com/in/emmanuel-c-bb923213a/" target="_blank">
@@ -93,23 +107,24 @@
             </div>
         </section>
         <article class="m-12">
-            <section id="secAbout" class="scroll-link section__about mx-section margin-section">
+            <section id="secAbout" class="section__about mx-section margin-section">
                 <h2 class="sub-title pb-1 title__color title-center">Acerca de mí</h2>
                 <p>
-                    que tal! como ya vieron en el titulo, me especializo en el Desarrollo web mas que todo en el
+                    Que tal! como ya vieron en el titulo, me especializo en el Desarrollo web mas que todo en el
                     apartado
-                    del front end y en proximas entregas en back end. <br> las actitudes que destaco son desde mi
+                    del front end y en proximas entregas en back end. <br>Las actitudes que destaco son desde mi
                     energia
                     por aprender y seguir programando asi tambien querer mostrar y presentar lo mejor de cada proyecto
                     que
-                    se presente en la ocacion
+                    se presente en la ocación.
                 </p>
             </section>
-            <section id="secSkills" class="scroll-link section__skills mx-section margin-section relative">
+            <section id="secSkills" class="section__skills mx-section margin-section relative">
                 <div class="bg__content-circle bg__content-circle--one">
-                    <img src="/public/assets/background/circle.svg" alt="background" class="bg-circle-one relative">
+                    <!-- <img src="/public/assets/background/circle.svg" alt="background" class="bg-circle-one relative"> -->
+                    <div class="slider-thumb bg-circle-one relative"></div>
                 </div>
-                <h2 class="sub-title title__color pb-1 title-center">mis habilidades</h2>
+                <h2 class="sub-title title__color pb-1 title-center">Mis habilidades</h2>
                 <div class="grid text-center skills__container">
                     <div class="skills__container-item flex">
                         <i class="fa-brands fa-react fa-3x skills__icon flex"></i>
@@ -121,19 +136,19 @@
                     </div>
                     <div class="skills__container-item flex">
                         <i class="fa-brands fa-git-alt skills__icon flex fa-3x"></i>
-                        <p class="sub-section title__color">git</p>
+                        <p class="sub-section title__color">Git</p>
                     </div>
                     <div class="skills__container-item flex">
                         <i class="fa-brands fa-js skills__icon flex fa-3x"></i>
-                        <p class="sub-section title__color">JavasCript</p>
+                        <p class="sub-section title__color">JavaScript</p>
                     </div>
                 </div>
             </section>
-            <section id="secExperience" class="scroll-link section__experience mx-section margin-section relative">
+            <section id="secExperience" class="section__experience mx-section margin-section relative">
                 <h2 class="sub-title title__color pb-1 title-center">Experiencia</h2>
                 <div class="flex experience--container-element--item">
                     <span>Abr-2022</span>
-                    <span><strong class="title__color">resimex</strong><br>Coworking lab</span>
+                    <span><strong class="title__color">Resimex</strong><br>Coworking lab</span>
                 </div>
                 <div class="flex experience--container-element--item">
                     <span>nov-2022</span>
@@ -143,21 +158,132 @@
                     <span>Noviembre-2022</span>
                     <span><strong class="title__color">Ecomerce React</strong><br> Academlo</span>
                 </div>
-                <div class="bg__content-circle bg__content-circle--two">
-                    <img src="/public/assets/background/circle.svg" alt="background" class="bg-circle-two relative">
+                <div class="bg__content-circle relative bg__content-circle--two">
+                    <!-- <img src="/public/assets/background/circle.svg" alt="background" class="bg-circle-two relative"> -->
+                    <div class="slider-thumb bg-circle-two relative"></div>
                 </div>
             </section>
-            <section id="secPortfolio" class="scroll-link section__portfolio mx-section margin-section">
-                <h2 class="sub-title title__color pb-1 title-center">portafolio</h2>
-                <div class="portfolio__container-imgs">
-                    <div class="page flex element-center"><img src="/public/assets/no-image.svg" alt="no-image"
-                            class="svg__no-image"></div>
-                    <div class="page flex element-center"><img src="/public/assets/no-image.svg" alt="no-image"
-                            class="svg__no-image"></div>
-                    <div class="page flex element-center"><img src="/public/assets/no-image.svg" alt="no-image"
-                            class="svg__no-image"></div>
-                    <div class="page flex element-center"><img src="/public/assets/no-image.svg" alt="no-image"
-                            class="svg__no-image"></div>
+            <!--! TAMO AQUI.... -->
+            <section id="secPortfolio" class="section__portfolio mx-section margin-section">
+                <h2 class="sub-title title__color pb-1 title-center">Portafolio</h2>
+                <div class="portfolio__container">
+                    <div class="portfolio__element">
+                        <input type="radio" name="portfolioElement" id="portfolio1">
+                        <label for="portfolio1">
+                            <h3>1</h3>
+                            <h4>quotes/notas</h4>
+                            <img src="/public/assets/portfolioImage/proyectOneTitle.png" alt="portfolio-img"
+                                class="portfolio__img">
+                            <img src="/public/assets/portfolioImage/proyectOneVertical.png" alt="portfolio-img"
+                                class="portfolio__img-vertical--active">
+                            <img src="/public/assets/portfolioImage/proyectOne.png" alt="portfolio-img"
+                                class="portfolio__img-horizontal--active">
+                        </label>
+                        <div class="portfolio__element--content">
+                            <p>
+                                <strong>Recoleccion de notas.</strong> <br>
+                                muestra una nota aleatoria al tocar boton. <br>
+                                - uso de tailwind para efectividad. <br>
+                                - completada (v1.1) <br>
+                            <ul>
+                                <li>
+                                    <a href="https://quotesproyect-one.netlify.app/" target="_blank"
+                                        title="ver pagina web">
+                                        <i class="fa-solid fa-globe fa-2x"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/leitsman/QuotesProyectOne" target="_blank"
+                                        title="Ver repositorio">
+                                        <i class="fa-brands fa-square-github fa-2x"></i></a>
+                                </li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="portfolio__element">
+                        <input type="radio" name="portfolioElement" id="portfolio2">
+                        <label for="portfolio2">
+                            <h3>2</h3>
+                            <h4>The Wheather</h4>
+                            <img src="/public/assets/portfolioImage/proyectTwoTitle.png" alt="portfolio-img"
+                                class="portfolio__img">
+                            <img src="/public/assets/portfolioImage/proyectTwoVertical.png" alt="portfolio-img"
+                                class="portfolio__img-vertical--active">
+                        </label>
+                        <div class="portfolio__element--content">
+                            <p>
+                                <strong>app del tiempo</strong> <br>
+                                implementacion de api externa con api key. <br>
+                                - uso de axios.<br>
+                                - en fase de remodelacion (v1.0) <br>
+                            <ul>
+                                <li><a href="https://weatherproyect-two.netlify.app/" target="_blank"
+                                        title="ver pagina web"><i class="fa-solid fa-globe fa-2x"></i></a></li>
+                                <li><a href="https://github.com/leitsman/WeatherProyectTwo" target="_blank"
+                                        title="Ver repositorio">
+                                        <i class="fa-brands fa-square-github fa-2x"></i></a>
+                                </li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="portfolio__element">
+                        <input type="radio" name="portfolioElement" id="portfolio3">
+                        <label for="portfolio3">
+                            <h3>3</h3>
+                            <h4>Rick and morty</h4>
+                            <img src="/public/assets/portfolioImage/proyectThreeTitle.png" alt="portfolio-img"
+                                class="portfolio__img">
+                            <img src="/public/assets/portfolioImage/proyectThreeVertical.png" alt="portfolio-img"
+                                class="portfolio__img-vertical--active">
+                        </label>
+                        <div class="portfolio__element--content">
+                            <p>
+                                <strong>una wikipedia de personajes.</strong> <br>
+                                <!-- . <br> -->
+                                - renderizacion de listas <br>
+                                - en fase de remodelacion (v1.0) <br>
+                            <ul>
+                                <li><a href="https://rick-and-mortyproyect-three.netlify.app/" target="_blank"
+                                        title="ver pagina web"><i class="fa-solid fa-globe fa-2x"></i></a></li>
+                                <li><a href="https://github.com/leitsman/RickAndMortyProyectThree" target="_blank"
+                                        title="Ver repositorio">
+                                        <i class="fa-brands fa-square-github fa-2x"></i></a>
+                                </li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="portfolio__element">
+                        <input type="radio" name="portfolioElement" id="portfolio4">
+                        <label for="portfolio4">
+                            <h3>4</h3>
+                            <h4>Ecomerce</h4>
+                            <img src="/public/assets/portfolioImage/proyectFiveTitle.png" alt="portfolio-img"
+                                class="portfolio__img">
+                            <img src="/public/assets/portfolioImage/proyectFiveVertical.png" alt="portfolio-img"
+                                class="portfolio__img-vertical--active">
+                        </label>
+                        <div class="portfolio__element--content">
+                            <p>
+                                <strong>tienda online de productos.</strong> <br>
+                                con funciones como: seleccion de producto, comprar, carrito de compra, historial de
+                                compra, login y sign up. <br>
+                                - uso de redux/thunk/boostrap. <br>
+                                <error>- incluia su propia base de datos, por tiempo la pagina lo dio de baja.</error>
+                                <br>
+                                - en fase de remodelacion (v1.0) <br>
+                            <ul>
+                                <li><a href="https://ecomerceproyect-five.netlify.app/" target="_blank"
+                                        title="ver pagina web"><i class="fa-solid fa-globe fa-2x"></i></a></li>
+                                <li><a href="https://github.com/leitsman/EcomerceProyectSix" target="_blank"
+                                        title="Ver repositorio">
+                                        <i class="fa-brands fa-square-github fa-2x"></i></a>
+                                </li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </section>
         </article>
