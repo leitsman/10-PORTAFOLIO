@@ -919,6 +919,10 @@ section[id*="sec"] {
   .sub-section {
     line-height: 2.4rem;
   }
+  .redes__icon:hover,
+  .principal__button-cv:hover {
+    color: var(--color-subtitle);
+  }
   .header__container,
   .main,
   .footer {
