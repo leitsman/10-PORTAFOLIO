@@ -40,6 +40,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- ================ FONTS TITLE =================== -->
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -67,10 +69,14 @@
             <div class="header__logo">E.C.</div>
             <nav class="header__nav">
                 <!-- MENU -->
-                <img src="/public/assets/menu.svg" class="nav__Menu-img" alt="menu" id="menu__img-open">
+                <button class="header__darkmode-container" id="buttonDark">
+                    <i class="fa-solid fa-lightbulb fa-2x header__darkmode-light"></i>
+                    <i class="fa-solid fa-moon fa-2x header__darkmode-moon"></i>
+                </button>
+                <i class="fa-solid fa-bars fa-2x nav__Menu-img" id="menu__img-open"></i>
 
                 <div class="nav__menu flex menu__close" id="menu-principal">
-                    <img src="public/assets/close.svg" class="nav__menu-img-close" id="menu__img-close" alt="close">
+                    <i class="fa-solid fa-xmark fa-2x nav__menu-img-close text-center" id="menu__img-close"></i>
                     <ul class="nav__div-list flex sub-title">
                         <li><a href="#secAbout" class="ul__item">Acerca de mí</a></li>
                         <li><a href="#secSkills" class="ul__item">Mis habilidades</a></li>
@@ -88,8 +94,8 @@
                 <img src="/public/assets/background/lineal.svg" alt="background">
             </div>
             <img src="public/assets/fotoMain.jpg" class="principal__face-perfil" alt="foto de perfil">
-            <h2 class="sub-title">Hola, soy Emmanuel
-                <h1 class="title title__color">Diseñador y desarrollador web</h1>
+            <h2 class="sub-title sub-title-color">Hola, soy Emmanuel
+                <h1 class="title">desarrollador web full-stack</h1>
             </h2>
             <div class="flex principal__redes">
                 <a href="https://www.linkedin.com/in/emmanuel-c-bb923213a/" target="_blank">
@@ -108,15 +114,23 @@
         </section>
         <article class="m-12">
             <section id="secAbout" class="section__about mx-section margin-section">
-                <h2 class="sub-title pb-1 title__color title-center">Acerca de mí</h2>
+                <h2 class="sub-title sub-title-color pb-1 title-center">Acerca de mí</h2>
                 <p>
-                    Que tal! como ya vieron en el titulo, me especializo en el Desarrollo web mas que todo en el
-                    apartado
-                    del front end y en proximas entregas en back end. <br>Las actitudes que destaco son desde mi
-                    energia
-                    por aprender y seguir programando asi tambien querer mostrar y presentar lo mejor de cada proyecto
-                    que
-                    se presente en la ocación.
+                    que tal! me llamo Emmanuel, egresado como full-stack de desarrollo web en Academlo.<br>
+                    <br>
+                    con una trayectoria de proyectos durante mi estancia estudiando logre desarrollar un enfoque hacia
+                    la excelencia técnica buscando ofrecer resultados de calidad y excelentes, ademas de adquirir
+                    experiencia trabajando en equipo con otros desarrolladores.<br>
+                    <br>
+                    Destaco en el área de Front-end, donde puedo combinar mi pasión por el diseño visual con la creación
+                    de experiencias cómodas para los usuarios, ademas de aprender las tecnologías y siempre seguir
+                    actualizado al contribuir activamente al ritmo acelerado de cambio en la industria tecnológica.<br>
+                    <br>
+                    mi objetivo profesional es poder crecer profesionalmente en el campo de la programación web
+                    aportando mis habilidades formando parte de una empresa aplicando mis habilidades para lograr los
+                    mejores resultados, y en un futuro poder liderar un equipo.<br>
+                    <br>
+                    no dudes en contactarme y hablar un poco mas.
                 </p>
             </section>
             <section id="secSkills" class="section__skills mx-section margin-section relative">
@@ -124,39 +138,39 @@
                     <!-- <img src="/public/assets/background/circle.svg" alt="background" class="bg-circle-one relative"> -->
                     <div class="slider-thumb bg-circle-one relative"></div>
                 </div>
-                <h2 class="sub-title title__color pb-1 title-center">Mis habilidades</h2>
+                <h2 class="sub-title sub-title-color pb-1 title-center">Mis habilidades</h2>
                 <div class="grid text-center skills__container">
                     <div class="skills__container-item flex">
                         <i class="fa-brands fa-react fa-3x skills__icon flex"></i>
-                        <p class="sub-section title__color">React</p>
+                        <p class="sub-section title-strong">React</p>
                     </div>
                     <div class="skills__container-item flex">
                         <i class="fa-solid fa-file-code skills__icon flex fa-3x"></i>
-                        <p class="sub-section title__color">Html/Css</p>
+                        <p class="sub-section title-strong">Html/Css</p>
                     </div>
                     <div class="skills__container-item flex">
                         <i class="fa-brands fa-git-alt skills__icon flex fa-3x"></i>
-                        <p class="sub-section title__color">Git</p>
+                        <p class="sub-section title-strong">Git</p>
                     </div>
                     <div class="skills__container-item flex">
                         <i class="fa-brands fa-js skills__icon flex fa-3x"></i>
-                        <p class="sub-section title__color">JavaScript</p>
+                        <p class="sub-section title-strong">JavaScript</p>
                     </div>
                 </div>
             </section>
             <section id="secExperience" class="section__experience mx-section margin-section relative">
-                <h2 class="sub-title title__color pb-1 title-center">Experiencia</h2>
+                <h2 class="sub-title sub-title-color  pb-1 title-center">Experiencia</h2>
                 <div class="flex experience--container-element--item">
                     <span>Abr-2022</span>
-                    <span><strong class="title__color">Resimex</strong><br>Coworking lab</span>
+                    <span><strong class="title-strong">Resimex</strong><br>Coworking lab</span>
                 </div>
                 <div class="flex experience--container-element--item">
                     <span>nov-2022</span>
-                    <span><strong class="title__color">Pokedex React</strong><br>Academlo</span>
+                    <span><strong class="title-strong">Pokedex React</strong><br>Academlo</span>
                 </div>
                 <div class="flex experience--container-element--item">
                     <span>Noviembre-2022</span>
-                    <span><strong class="title__color">Ecomerce React</strong><br> Academlo</span>
+                    <span><strong class="title-strong">Ecomerce React</strong><br> Academlo</span>
                 </div>
                 <div class="bg__content-circle relative bg__content-circle--two">
                     <!-- <img src="/public/assets/background/circle.svg" alt="background" class="bg-circle-two relative"> -->
@@ -165,13 +179,13 @@
             </section>
             <!--! TAMO AQUI.... -->
             <section id="secPortfolio" class="section__portfolio mx-section margin-section">
-                <h2 class="sub-title title__color pb-1 title-center">Portafolio</h2>
+                <h2 class="sub-title sub-title-color  pb-1 title-center">Portafolio</h2>
                 <div class="portfolio__container">
                     <div class="portfolio__element">
                         <input type="radio" name="portfolioElement" id="portfolio1">
                         <label for="portfolio1">
                             <h3>1</h3>
-                            <h4>quotes/notas</h4>
+                            <h4>Notas</h4>
                             <img src="/public/assets/portfolioImage/proyectOneTitle.png" alt="portfolio-img"
                                 class="portfolio__img">
                             <img src="/public/assets/portfolioImage/proyectOneVertical.png" alt="portfolio-img"
@@ -181,10 +195,10 @@
                         </label>
                         <div class="portfolio__element--content">
                             <p>
-                                <strong>Recoleccion de notas.</strong> <br>
                                 muestra una nota aleatoria al tocar boton. <br>
-                                - uso de tailwind para efectividad. <br>
-                                - completada (v1.1) <br>
+                                - uso de: react/css/tailwind<br>
+                                - (v1.1) <br>
+                            </p>
                             <ul>
                                 <li>
                                     <a href="https://quotesproyect-one.netlify.app/" target="_blank"
@@ -197,7 +211,6 @@
                                         <i class="fa-brands fa-square-github fa-2x"></i></a>
                                 </li>
                             </ul>
-                            </p>
                         </div>
                     </div>
                     <div class="portfolio__element">
@@ -209,13 +222,16 @@
                                 class="portfolio__img">
                             <img src="/public/assets/portfolioImage/proyectTwoVertical.png" alt="portfolio-img"
                                 class="portfolio__img-vertical--active">
+                            <img src="/public/assets/portfolioImage/proyectTwo.png" alt="portfolio-img"
+                                class="portfolio__img-horizontal--active">
                         </label>
                         <div class="portfolio__element--content">
                             <p>
-                                <strong>app del tiempo</strong> <br>
-                                implementacion de api externa con api key. <br>
-                                - uso de axios.<br>
-                                - en fase de remodelacion (v1.0) <br>
+
+                                app del tiempo con detección de ubicación <br>
+                                - uso de API(key)/react/tailwind/axios<br>
+                                - (v1.0) <br>
+                            </p>
                             <ul>
                                 <li><a href="https://weatherproyect-two.netlify.app/" target="_blank"
                                         title="ver pagina web"><i class="fa-solid fa-globe fa-2x"></i></a></li>
@@ -224,7 +240,6 @@
                                         <i class="fa-brands fa-square-github fa-2x"></i></a>
                                 </li>
                             </ul>
-                            </p>
                         </div>
                     </div>
                     <div class="portfolio__element">
@@ -236,13 +251,15 @@
                                 class="portfolio__img">
                             <img src="/public/assets/portfolioImage/proyectThreeVertical.png" alt="portfolio-img"
                                 class="portfolio__img-vertical--active">
+                            <img src="/public/assets/portfolioImage/proyectThree.png" alt="portfolio-img"
+                                class="portfolio__img-horizontal--active">
                         </label>
                         <div class="portfolio__element--content">
                             <p>
-                                <strong>una wikipedia de personajes.</strong> <br>
-                                <!-- . <br> -->
-                                - renderizacion de listas <br>
-                                - en fase de remodelacion (v1.0) <br>
+                                una wikipedia de personajes.<br>
+                                - renderizacion de listas<br>
+                                - (v1.0) <br>
+                            </p>
                             <ul>
                                 <li><a href="https://rick-and-mortyproyect-three.netlify.app/" target="_blank"
                                         title="ver pagina web"><i class="fa-solid fa-globe fa-2x"></i></a></li>
@@ -251,7 +268,6 @@
                                         <i class="fa-brands fa-square-github fa-2x"></i></a>
                                 </li>
                             </ul>
-                            </p>
                         </div>
                     </div>
                     <div class="portfolio__element">
@@ -263,16 +279,16 @@
                                 class="portfolio__img">
                             <img src="/public/assets/portfolioImage/proyectFiveVertical.png" alt="portfolio-img"
                                 class="portfolio__img-vertical--active">
+                            <img src="/public/assets/portfolioImage/proyectFive.png" alt="portfolio-img"
+                                class="portfolio__img-horizontal--active">
                         </label>
                         <div class="portfolio__element--content">
                             <p>
-                                <strong>tienda online de productos.</strong> <br>
-                                con funciones como: seleccion de producto, comprar, carrito de compra, historial de
-                                compra, login y sign up. <br>
-                                - uso de redux/thunk/boostrap. <br>
-                                <error>- incluia su propia base de datos, por tiempo la pagina lo dio de baja.</error>
-                                <br>
-                                - en fase de remodelacion (v1.0) <br>
+                                tienda online de productos.<br>
+                                - uso de react/redux/<wbr>thunk/<wbr>boostrap/<wbr>react router<br>
+                                <error>- back-end hecho con NodeJS/postgreSQL</error> <br>
+                                - (v1.0) <br>
+                            </p>
                             <ul>
                                 <li><a href="https://ecomerceproyect-five.netlify.app/" target="_blank"
                                         title="ver pagina web"><i class="fa-solid fa-globe fa-2x"></i></a></li>
@@ -281,7 +297,6 @@
                                         <i class="fa-brands fa-square-github fa-2x"></i></a>
                                 </li>
                             </ul>
-                            </p>
                         </div>
                     </div>
                 </div>
@@ -289,7 +304,7 @@
         </article>
     </main>
     <footer id="myContact" class="mx-section margin-section">
-        <h2 class="sub-title title__color pb-1 title-center">Contacto</h2>
+        <h2 class="sub-title sub-title-color  pb-1 title-center">Contacto</h2>
         <ul class="footer__container-contact flex">
             <li><a href="https://bit.ly/3VV8cTH" target="_blank" class="contact__item flex">
                     <i class="fa-solid fa-phone fa-2x contact__item--icon flex"></i>
