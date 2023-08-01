@@ -1,7 +1,9 @@
 import { menuOpenClose } from "./components/menu.js"
+import { darkMode } from "./components/DarkMode.js"
 
 window.addEventListener('DOMContentLoaded', e => {
     menuOpenClose()
+    darkMode()
 })
 //! ================ HEADER-fixed ===============
 const headerFix = document.querySelector('.header')
@@ -14,6 +16,12 @@ window.addEventListener('scroll', e => {
     } else {
         headerFix.classList.remove('header__fixed')
         headerContainer.classList.remove('header__container--shadow')
+    }
+    if (window.scrollY >= 380) {
+        arrowUp.classList.add('container__arrow-up--active');
+
+    } else {
+        arrowUp.classList.remove('container__arrow-up--active')
     }
 });
 //! ============== INCREMENT ICON ==============
