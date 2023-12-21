@@ -89,23 +89,26 @@
         </div>
     </header>
     <main class="main">
-        <section class="principal__content relative flex text-center">
+        <section class="principal__content relative flex ">
             <div class="principal__background">
                 <img src="/public/assets/background/lineal.svg" alt="background">
             </div>
-            <img src="public/assets/fotoMain.jpg" class="principal__face-perfil" alt="foto de perfil">
+            <!-- <img src="public/assets/fotoMain.jpg" class="principal__face-perfil" alt="foto de perfil"> -->
             <h2 class="sub-title sub-title-color">Hola, soy Emmanuel
-                <h1 class="title">desarrollador web full-stack</h1>
+                <h1 class="title">Desarrollador Web Full-Stack</h1>
             </h2>
             <div class="flex principal__redes">
-                <a href="https://www.linkedin.com/in/emmanuel-c-bb923213a/" target="_blank">
-                    <i class="redes__icon fa-brands fa-linkedin-in fa-3x"></i>
-                </a>
                 <a href="/public/CV.pdf" target="_blank" download="cv-emmanuel-full-stack">
-                    <button class="principal__button-cv sub-section">descargar cv</button>
+                    <button class="principal__button-cv sub-section">Descargar CV</button>
                 </a>
-                <a href="https://github.com/leitsman" target="_blank">
+                <a href="https://www.linkedin.com/in/emmanuel-c-bb923213a/" target="_blank" rel="noopener noreferrer">
+                    <i class="redes__icon contact__item--icon fa-brands fa-linkedin-in fa-3x"></i>
+                </a>
+                <a href="https://github.com/leitsman" target="_blank" rel="noopener noreferrer">
                     <i class="redes__icon fa-brands fa-github fa-3x"></i>
+                </a>
+                <a href="https://bit.ly/3VV8cTH" target="_blank" rel="noopener noreferrer">
+                    <i class="redes__icon fa-brands fa-whatsapp fa-3x"></i>
                 </a>
             </div>
             <div class="principal__background-curve relative">
@@ -130,7 +133,10 @@
                     aportando mis habilidades formando parte de una empresa aplicando mis habilidades para lograr los
                     mejores resultados, y en un futuro poder liderar un equipo.<br>
                     <br>
-                    no dudes en contactarme y hablar un poco mas.
+                    no dudes en
+                    <a href="https://bit.ly/3VV8cTH" target="_blank" rel="noopener noreferrer">contactarme</a> y hablar
+                    un
+                    poco mas.
                 </p>
             </section>
             <section id="secSkills" class="section__skills mx-section margin-section relative">
@@ -165,8 +171,12 @@
                         <p class="sub-section title-strong">PostgreSQL</p>
                     </div>
                 </div>
+                <div class="bg__content-circle relative bg__content-circle--two">
+                    <!-- <img src="/public/assets/background/circle.svg" alt="background" class="bg-circle-two relative"> -->
+                    <div class="slider-thumb bg-circle-two relative"></div>
+                </div>
             </section>
-            <section id="secExperience" class="section__experience mx-section margin-section relative">
+            <!-- <section id="secExperience" class="section__experience mx-section margin-section relative">
                 <h2 class="sub-title sub-title-color  pb-1 title-center">Experiencia</h2>
                 <div class="flex experience--container-element--item">
                     <span>Abr-2022</span>
@@ -181,11 +191,10 @@
                     <span><strong class="title-strong">Ecomerce React</strong><br> Academlo</span>
                 </div>
                 <div class="bg__content-circle relative bg__content-circle--two">
-                    <!-- <img src="/public/assets/background/circle.svg" alt="background" class="bg-circle-two relative"> -->
+                    <img src="/public/assets/background/circle.svg" alt="background" class="bg-circle-two relative">
                     <div class="slider-thumb bg-circle-two relative"></div>
                 </div>
-            </section>
-            <!--! TAMO AQUI.... -->
+            </section> -->
             <section id="secPortfolio" class="section__portfolio mx-section margin-section">
                 <h2 class="sub-title sub-title-color  pb-1 title-center">Portafolio</h2>
                 <div class="portfolio__container">
@@ -203,8 +212,8 @@
                         </label>
                         <div class="portfolio__element--content">
                             <p>
-                                muestra una nota aleatoria al tocar boton. <br>
-                                - uso de: react/css/tailwind<br>
+                                Muestra una nota aleatoria al tocar botón. <br>
+                                - Uso de: react/css/tailwind<br>
                                 - (v1.1) <br>
                             </p>
                             <ul>
@@ -225,7 +234,7 @@
                         <input type="radio" name="portfolioElement" id="portfolio2">
                         <label for="portfolio2">
                             <h3>2</h3>
-                            <h4>The Wheather</h4>
+                            <h4>The Weather</h4>
                             <img src="/public/assets/portfolioImage/proyectTwoTitle.png" alt="portfolio-img"
                                 class="portfolio__img">
                             <img src="/public/assets/portfolioImage/proyectTwoVertical.png" alt="portfolio-img"
@@ -236,8 +245,8 @@
                         <div class="portfolio__element--content">
                             <p>
 
-                                app del tiempo con detección de ubicación <br>
-                                - uso de API(key)/react/tailwind/axios<br>
+                                App del tiempo con detección de ubicación. <br>
+                                - Uso de API(key)/react/tailwind/axios<br>
                                 - (v1.0) <br>
                             </p>
                             <ul>
@@ -254,7 +263,7 @@
                         <input type="radio" name="portfolioElement" id="portfolio3">
                         <label for="portfolio3">
                             <h3>3</h3>
-                            <h4>Rick and morty</h4>
+                            <h4>Rick and Morty</h4>
                             <img src="/public/assets/portfolioImage/proyectThreeTitle.png" alt="portfolio-img"
                                 class="portfolio__img">
                             <img src="/public/assets/portfolioImage/proyectThreeVertical.png" alt="portfolio-img"
@@ -264,8 +273,8 @@
                         </label>
                         <div class="portfolio__element--content">
                             <p>
-                                una wikipedia de personajes.<br>
-                                - renderizacion de listas<br>
+                                Una wikipedia de personajes.<br>
+                                - Renderización de listas<br>
                                 - (v1.0) <br>
                             </p>
                             <ul>
@@ -282,7 +291,7 @@
                         <input type="radio" name="portfolioElement" id="portfolio4">
                         <label for="portfolio4">
                             <h3>4</h3>
-                            <h4>Ecomerce</h4>
+                            <h4>Ecommerce</h4>
                             <img src="/public/assets/portfolioImage/proyectFiveTitle.png" alt="portfolio-img"
                                 class="portfolio__img">
                             <img src="/public/assets/portfolioImage/proyectFiveVertical.png" alt="portfolio-img"
@@ -292,8 +301,8 @@
                         </label>
                         <div class="portfolio__element--content">
                             <p>
-                                tienda online de productos.<br>
-                                - uso de react/redux/<wbr>thunk/<wbr>boostrap/<wbr>react router<br>
+                                Tienda online de productos.<br>
+                                - Uso de react/redux/<wbr>thunk/<wbr>bootsrap/<wbr>react router.<br>
                                 <error>- back-end hecho con NodeJS/postgreSQL</error> <br>
                                 - (v1.0) <br>
                             </p>
@@ -313,18 +322,46 @@
     </main>
     <footer id="myContact" class="mx-section margin-section">
         <h2 class="sub-title sub-title-color  pb-1 title-center">Contacto</h2>
-        <ul class="footer__container-contact flex">
-            <li><a href="https://bit.ly/3VV8cTH" target="_blank" class="contact__item flex">
-                    <i class="fa-solid fa-phone fa-2x contact__item--icon flex"></i>
-                    <span class="sub-section">Número Celular</span>
+        <!-- TAMO AQUI MEBNNNNNN -->
+        <div class="footer__container-contact flex">
+            <!-- <div class="contact__container-form">
+            </div> -->
+            <form method="POST" netlify class="contact__container-form flex">
+                <label class="relative">
+                    <span>Nombre</span>
+                    <input type="text" name="name" required minlength="3" placeholder="Sebastian">
+                </label>
+                <label class="relative">
+                    <span>Email</span>
+                    <input type="email" name="email" id="subject" required minlength="5" placeholder="email@gmail.com">
+                </label>
+                <label class="relative">
+                    <span>Texto</span>
+                    <textarea name="message" placeholder="Escribe tu mensaje"></textarea>
+                </label>
+                <p>
+                    <button type="submit" class="form__button-send">Enviar</button>
+                </p>
+            </form>
+            <div class="contact__container-redes flex">
+                <!-- <a href="mailto:emmanuel.il.com" target="_blank" rel="noopener noreferrer"
+                    class="contact__container-item flex">
+                    <i class="contact__item--icon fa-solid fa-envelope fa-2x"></i>Email
+                </a> -->
+                <a href="https://bit.ly/3VV8cTH" target="_blank" rel="noopener noreferrer"
+                    class="contact__container-item flex">
+                    <i class="contact__item--icon fa-brands fa-whatsapp fa-2x"></i>Whatsapp
                 </a>
-            </li>
-            <li><a href="mailto:misterium273@gmail.com" class="contact__item flex">
-                    <i class="fa-solid fa-envelope fa-2x contact__item--icon flex"></i>
-                    <span class="sub-section">Email</span>
+                <a href="https://www.linkedin.com/in/emmanuel-c-bb923213a/" target="_blank" rel="noopener noreferrer"
+                    class="contact__container-item flex">
+                    <i class="contact__item--icon fa-brands fa-linkedin-in fa-2x"></i>LinkedIn
                 </a>
-            </li>
-        </ul>
+                <a href="https://github.com/leitsman" target="_blank" rel="noopener noreferrer"
+                    class="contact__container-item flex">
+                    <i class="contact__item--icon fa-brands fa-github fa-2x"></i>Github
+                </a>
+            </div>
+        </div>
         <!-- <small>hecho con lenguaje vanilla</smalls> -->
     </footer>
     <script src="/js/main.js" type="module"></script>
