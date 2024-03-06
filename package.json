@@ -1,0 +1,24 @@
+{
+  "name": "10-portafolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "config": "tsc --init",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leitsman/10-PORTAFOLIO.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leitsman/10-PORTAFOLIO/issues"
+  },
+  "homepage": "https://github.com/leitsman/10-PORTAFOLIO#readme",
+  "devDependencies": {
+    "typescript": "5.3.3"
+  }
+}

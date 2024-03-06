@@ -1,3 +1,5 @@
 public/assets/references
 public/assets/picturePage.png
 public/assets/picturePageWeb.png
+node_modules
+dist
