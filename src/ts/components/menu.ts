@@ -17,7 +17,9 @@ export function menuOpenClose(): void {
 }
 //! =============== CLICK AND CLOSE MENU
 function clickAndCloseMenu(elementHtml: HTMLElement | null) {
-  const itemMenu = document.querySelectorAll("a.ul__item");
+  const itemMenu = document.querySelectorAll(
+    "a.ul__item"
+  ) as NodeListOf<HTMLAnchorElement>;
 
   itemMenu.forEach((button) => {
     button.addEventListener("click", (e) => {

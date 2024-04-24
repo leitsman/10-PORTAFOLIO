@@ -9,6 +9,7 @@ export function isScroll(): void {
 
   // //! ================ HEADER-fixed ===============
   window.addEventListener("scroll", (e) => {
+    //header
     if (window.scrollY >= 1) {
       headerFix.classList.add("header__fixed");
       headerContainer.classList.add("header__container--shadow");
@@ -16,6 +17,7 @@ export function isScroll(): void {
       headerFix.classList.remove("header__fixed");
       headerContainer.classList.remove("header__container--shadow");
     }
+    //arrow button
     if (window.scrollY >= 380) {
       arrowUp.classList.add("container__arrow-up--active");
     } else {

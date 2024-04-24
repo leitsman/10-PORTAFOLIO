@@ -3,3 +3,5 @@ public/assets/picturePage.png
 public/assets/picturePageWeb.png
 node_modules
 dist
+# jest
+coverage
